@@ -2,13 +2,14 @@
 
 if(isset($_POST['submit'])){
     $name  = $_POST['name'];
-    $subject = $_POST['subject'];
     $mailFrom = $_POST['email'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $mailTo ="xuwillie1@gmail.com";
+    $mailTo ="1136919478@qq.com";
     $headers = "From: ".$mailFrom;
     $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+    
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.php?mailsend");
 
