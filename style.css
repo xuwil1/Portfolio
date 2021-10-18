@@ -68,7 +68,7 @@
     display: none;
 }
 .menu-btn:hover{
-    color: #090C9B;
+    color: /*#090C9B*/ black;
 }
 
 /*Home section styling*/
