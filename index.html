@@ -79,11 +79,16 @@
     <!--Contact me Section-->
     <section class="contactMe" id="contactMe">
         <div class="title"><h2>Contact Me</h2></div>
-         <form action="https://formsubmit.co/xuwillie1@gmail.com" method="POST">
+        <form action="contact.php" method="POST">
+            <!--<label> Name</label>-->
             <div><input type="text" name="name" placeholder="Full name"></div>
+            <!--<label>Email</label>-->
             <div><input type="email" name="email" placeholder="Email"></div>
+            <!--<label>Subject</label>-->
             <div><input type="text" name="subject" placeholder="Subject"></div>
+             <!--<label>Message</label>-->
             <div><textarea name="message" placeholder="Message"></textarea></div>
+            <!--Button-->
             <div class="submit"><input type="submit" value="Send"/></div>
         </form>
     </section>
